@@ -15,13 +15,12 @@ class Array
 		if empty?
 			self 
 		else
-			self.map! { |num| num * num}
+			self.map { |num| num * num }
 		end
 	end
 
 	def square! 
-		array = [1,2,3]
-		array.map { |num| num * num}
+		self.map! { |num| num * num }
 	end
 
 end 
